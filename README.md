@@ -52,4 +52,8 @@ yarn install
 # Inicie o servidor de desenvolvimento
 npm run dev
 # ou
+<<<<<<< HEAD
 yarn dev
+=======
+yarn dev
+>>>>>>> 802580184dd72cd5853c5bb2e34eed59d9dbb43b
