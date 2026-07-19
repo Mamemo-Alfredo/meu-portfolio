@@ -20,9 +20,8 @@ function ProfileCard() {
                 <ProfileDescription description="Experiência" value="2 anos" />
                 <ProfileDescription description="Foco" value="Desenvolvimento Web" />
                 
-                <SocialLinks valor="gh" link="#link" />
-                <SocialLinks valor="in" link="#link" />
-                <SocialLinks valor="@" link="#link" />
+                <SocialLinks valor="gh" link="https://github.com/Mamemo-Alfredo" />
+                <SocialLinks valor="in" link="https://www.linkedin.com/in/eliandro-aderito-santos-alfredo/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B3ZH0VJbwQVSsh57gQBEGxA%3D%3D" />
             </div>
         </div>
     );

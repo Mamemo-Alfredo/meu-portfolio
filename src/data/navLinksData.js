@@ -16,12 +16,6 @@ export const navLinksData = [
         label: '-/ Projectos',
         href: '#project',
         description: 'lista dos meus projecto.'
-    },
-    {
-        id: '04',
-        label: '-/ Contactos',
-        href: '#contac',
-        description: 'vamos conversar.'
     }
 ]
 
