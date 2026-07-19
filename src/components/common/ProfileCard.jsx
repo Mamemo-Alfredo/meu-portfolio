@@ -1,5 +1,6 @@
 import HeaderCard from "./HeaderCard";
 import ProfileDescription from "./ProfileDescription";
+import SocialLinks from "./SocialLinks";
 
 function ProfileCard() {
     return(
@@ -18,6 +19,10 @@ function ProfileCard() {
                 <ProfileDescription description="Localização" value="Luanda-Angola" />
                 <ProfileDescription description="Experiência" value="2 anos" />
                 <ProfileDescription description="Foco" value="Desenvolvimento Web" />
+                
+                <SocialLinks valor="gh" link="#link" />
+                <SocialLinks valor="in" link="#link" />
+                <SocialLinks valor="@" link="#link" />
             </div>
         </div>
     );

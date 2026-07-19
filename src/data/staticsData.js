@@ -9,11 +9,6 @@ export const staticsData = [
     {
         id: 2,
         label: 'Experiências',
-        static: '02'
-    },
-    {
-        id: 3,
-        label: 'Satisf.',
-        static: '80%'
+        static: '01+'
     }
  ];

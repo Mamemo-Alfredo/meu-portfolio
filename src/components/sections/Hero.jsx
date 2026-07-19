@@ -3,7 +3,7 @@ import { staticsData } from "../../data/staticsData";
 
 function Hero() {
     return(
-        <section className="p-8 px-10 md:px-20">
+        <section className="p-8 px-10 md:px-20" id="home">
             {/** Elementos em destaques. */}
             <div className="mt-6">
                 <p className="text-gray-400 font-bold md:mt-8 md:2xl">$ Olá, eu sou o <span className="text-cyan-400">--Eliandro.</span></p>

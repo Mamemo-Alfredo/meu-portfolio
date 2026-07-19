@@ -4,7 +4,7 @@ import Button from "../common/Button";
 
 function About() {
     return(
-        <section className="p-8 px-10 md:px-20">
+        <section className="p-8 px-10 md:px-20" id="about">
             <Title texto="sobre-mim" id="02" />
             <nav className="md:flex md:gap-8">
                 <ProfileCard></ProfileCard>

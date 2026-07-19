@@ -21,7 +21,7 @@ function ProjectCard({ titulo, nome, descricao, github, stacks, ano }) {
                         { 
                             stacks.map((stack, index) => (
                                 <li key={ index }>
-                                    <Button texto={ stack } color="#05df72" border="solid 2px #05df72" />
+                                    <Button texto={ stack } color="#00d3f2" border="solid 2px #00d3f2" />
                                 </li>
                             )) 
                         }

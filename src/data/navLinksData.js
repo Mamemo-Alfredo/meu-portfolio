@@ -8,7 +8,7 @@ export const navLinksData = [
     {
         id: '02',
         label: '-/ Sobre',
-        href: '#home',
+        href: '#about',
         description: 'uma descrição mais detalhada.'
     },
     {
