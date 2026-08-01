@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="pt-PT" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eliandro Alfredo</title>
+
+<!-- ===== Google Fonts: Poppins para títulos, Roboto para corpo de texto ===== -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+<!-- ===== Font Awesome para os ícones utilizados em toda a página ===== -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<!-- ===== Folha de estilos própria (separada do HTML) ===== -->
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+
+<!-- =====================================================================
+     1. CABEÇALHO / NAVBAR
+     ===================================================================== -->
+<header id="cabecalho">
+  <div class="logotipo">
+    <div class="logotipo-marca">EA</div>
+    <div class="logotipo-nome">Eliandro Alfredo</div>
+  </div>
+
+  <!-- Menu de navegação principal (visível em ecrãs largos) -->
+  <nav>
+    <ul>
+      <li><a href="#inicio">Início</a></li>
+      <li><a href="#sobre">Sobre Mim</a></li>
+      <li><a href="#projetos">Projetos</a></li>
+      <li><a href="#experiencia">Experiência</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <div class="cabecalho-direita">
+    <!-- Botão para alternar entre modo claro e escuro -->
+    <button class="botao-tema" id="botaoTema" aria-label="Alternar tema claro/escuro">
+      <i class="fa-solid fa-moon"></i>
+      <i class="fa-solid fa-sun"></i>
+    </button>
+    <!-- Botão do menu hambúrguer (apenas mobile) -->
+    <button class="hamburguer" id="botaoHamburguer" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Menu de navegação para dispositivos móveis -->
+<div class="sobreposicao-movel" id="sobreposicaoMovel"></div>
+<div class="menu-movel" id="menuMovel">
+  <div class="fechar-movel" id="fecharMovel">&times;</div>
+  <ul>
+    <li><a href="#inicio" class="ligacao-movel">Início</a></li>
+    <li><a href="#sobre" class="ligacao-movel">Sobre Mim</a></li>
+    <li><a href="#competencias" class="ligacao-movel">Competências</a></li>
+    <li><a href="#projetos" class="ligacao-movel">Projetos</a></li>
+    <li><a href="#experiencia" class="ligacao-movel">Experiência</a></li>
+    <li><a href="#contacto" class="ligacao-movel">Contacto</a></li>
+  </ul>
+</div>
+
+<!-- =====================================================================
+     2. HERO / BANNER — apresentação com efeito de digitação
+     ===================================================================== -->
+<section id="inicio" class="hero">
+  <div class="hero-fundo"></div>
+  <div class="hero-conteudo">
+    <div class="eyebrow">disponibilidade imediata</div>
+    <h1 class="hero-titulo">
+      <span id="texto-digitado"></span><span class="cursor-digitacao"></span>
+    </h1>
+    <p class="hero-subtitulo">Apaixonado por tecnologia e por ensinar. Ajudo pessoas e empresas a resolver problemas técnicos, desenvolvo aplicações web e formo a próxima geração de profissionais de informática.</p>
+    <div class="hero-ctas">
+      <a href="#projetos" class="botao botao-primario"><i class="fa-solid fa-diagram-project"></i> Ver Projetos</a>
+      <a href="#contacto" class="botao botao-secundario"><i class="fa-regular fa-envelope"></i> Contacte-me</a>
+    </div>
+  </div>
+  <div class="indicador-scroll"><span>Deslize</span><div class="linha"></div></div>
+</section>
+
+<!-- =====================================================================
+     3. SOBRE MIM
+     ===================================================================== -->
+<section id="sobre" class="sobre">
+  <div class="wrap sobre-grelha">
+    <div class="reveal" style="position:relative;">
+      <div class="sobre-foto"><i class="fa-solid fa-user"></i></div>
+      <div class="selo-experiencia"><b>1+</b><span>anos de experiência</span></div>
+    </div>
+    <div class="sobre-texto reveal">
+      <div class="eyebrow">sobre mim</div>
+      <h2 class="titulo-seccao">Técnico, programador e formador — no mesmo percurso.</h2>
+      <p>Sou técnico de informática com um percurso que passa pelo suporte técnico do dia a dia, pelo desenvolvimento de aplicações web e pela formação de novos profissionais da área. Esta combinação dá-me uma visão prática e completa dos problemas tecnológicos.</p>
+      <p>Tenho paixão por ensinar e por explicar conceitos técnicos de forma simples e acessível, sem nunca perder o rigor profissional. Trabalho com capacidade de adaptação a diferentes contextos, desde o apoio a utilizadores até ao desenvolvimento de sistemas à medida.</p>
+      <div class="sobre-lista">
+        <div class="sobre-item"><i class="fa-solid fa-headset"></i><div><b>Suporte técnico</b><span>Resolução rápida e eficaz</span></div></div>
+        <div class="sobre-item"><i class="fa-solid fa-code"></i><div><b>Programação web</b><span>PHP, JavaScript e mais</span></div></div>
+        <div class="sobre-item"><i class="fa-solid fa-chalkboard-user"></i><div><b>Formador</b><span>Conteúdos claros e práticos</span></div></div>
+        <div class="sobre-item"><i class="fa-solid fa-arrows-rotate"></i><div><b>Adaptabilidade</b><span>Sempre a aprender</span></div></div>
+      </div>
+      <a href="#" class="botao botao-secundario"><i class="fa-solid fa-file-arrow-down"></i> Descarregar Currículo</a>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     4. COMPETÊNCIAS TÉCNICAS
+     ===================================================================== -->
+<section id="competencias">
+  <div class="wrap">
+    <div class="eyebrow reveal">competências técnicas</div>
+    <h2 class="titulo-seccao reveal">Conhecimento que junta a teoria à prática.</h2>
+    <p class="subtitulo-seccao reveal">Três áreas complementares que sustentam o meu trabalho diário como profissional de informática.</p>
+
+    <div class="competencias-grelha">
+      <!-- Suporte Técnico -->
+      <div class="competencia-cartao reveal">
+        <div class="competencia-topo">
+          <div class="icone"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+          <h3>Suporte Técnico</h3>
+        </div>
+        <div class="barra-item"><div class="barra-topo"><span>Hardware</span><span>95%</span></div><div class="barra-fundo"><div class="barra-preenchimento" data-largura="95"></div></div></div>
+        <div class="barra-item"><div class="barra-topo"><span>Sistemas Operativos</span><span>92%</span></div><div class="barra-fundo"><div class="barra-preenchimento" data-largura="92"></div></div></div>
+        <div class="barra-item"><div class="barra-topo"><span>Redes e Cablagem</span><span>88%</span></div><div class="barra-fundo"><div class="barra-preenchimento" data-largura="88"></div></div></div>
+        <div class="barra-item"><div class="barra-topo"><span>Helpdesk / Apoio ao Utilizador</span><span>96%</span></div><div class="barra-fundo"><div class="barra-preenchimento" data-largura="96"></div></div></div>
+      </div>
+
+      <!-- Desenvolvimento Web -->
+      <div class="competencia-cartao reveal">
+        <div class="competencia-topo">
+          <div class="icone"><i class="fa-solid fa-code"></i></div>
+          <h3>Desenvolvimento Web</h3>
+        </div>
+        <div class="barra-item"><div class="barra-topo"><span>PHP</span><span>90%</span></div><div class="barra-fundo"><div class="barra-preenchimento" data-largura="90"></div></div></div>
+        <div class="barra-item"><div class="barra-topo"><span>JavaScript</span><span>87%</span></div><div class="barra-fundo"><div class="barra-preenchimento" data-largura="87"></div></div></div>
+        <div class="barra-item"><div class="barra-topo"><span>HTML &amp; CSS</span><span>94%</span></div><div class="barra-fundo"><div class="barra-preenchimento" data-largura="94"></div></div></div>
+        <div class="barra-item"><div class="barra-topo"><span>Bases de Dados (MySQL)</span><span>85%</span></div><div class="barra-fundo"><div class="barra-preenchimento" data-largura="85"></div></div></div>
+      </div>
+
+      <!-- Formação / Pedagogia -->
+      <div class="competencia-cartao reveal">
+        <div class="competencia-topo">
+          <div class="icone"><i class="fa-solid fa-chalkboard-user"></i></div>
+          <h3>Formação &amp; Pedagogia</h3>
+        </div>
+        <div class="barra-item"><div class="barra-topo"><span>Comunicação</span><span>93%</span></div><div class="barra-fundo"><div class="barra-preenchimento" data-largura="93"></div></div></div>
+        <div class="barra-item"><div class="barra-topo"><span>Criação de Conteúdos</span><span>89%</span></div><div class="barra-fundo"><div class="barra-preenchimento" data-largura="89"></div></div></div>
+        <div class="barra-item"><div class="barra-topo"><span>Gestão de Sala</span><span>86%</span></div><div class="barra-fundo"><div class="barra-preenchimento" data-largura="86"></div></div></div>
+        <div class="barra-item"><div class="barra-topo"><span>Avaliação de Aprendizagem</span><span>90%</span></div><div class="barra-fundo"><div class="barra-preenchimento" data-largura="90"></div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     5. PROJETOS / SERVIÇOS — com filtro por categoria (JS)
+     ===================================================================== -->
+<section id="projetos" class="projetos">
+  <div class="wrap">
+    <div class="eyebrow reveal">projetos &amp; serviços</div>
+    <h2 class="titulo-seccao reveal">Trabalhos e serviços prestados.</h2>
+    <p class="subtitulo-seccao reveal">Uma seleção de trabalhos nas três áreas em que atuo.</p>
+
+    <!-- Botões de filtro: o atributo data-categoria é usado pelo JavaScript -->
+    <div class="filtros reveal">
+      <button class="botao-filtro ativo" data-categoria="todos">Todos</button>
+      <button class="botao-filtro" data-categoria="suporte">Suporte Técnico</button>
+      <button class="botao-filtro" data-categoria="web">Desenvolvimento Web</button>
+      <button class="botao-filtro" data-categoria="formacao">Formação</button>
+    </div>
+
+    <div class="projetos-grelha" id="grelhaProjetos">
+      <p class="subtitulo-seccao reveal">Esta opção não está disponivel no momento.</p>
+      <!--
+      <div class="projeto-cartao reveal" data-categoria="web">
+        <div class="projeto-capa" style="background:linear-gradient(135deg,#0D47A1,#00BCD4);"><div class="grelha-linhas"></div><i class="fa-solid fa-cart-shopping"></i></div>
+        <div class="projeto-corpo">
+          <h3>Loja Virtual em PHP</h3>
+          <p>Plataforma de comércio eletrónico com carrinho, gestão de encomendas e painel de administração.</p>
+          <div class="projeto-etiquetas"><span>PHP</span><span>MySQL</span><span>JavaScript</span></div>
+        </div>
+      </div>
+
+      <div class="projeto-cartao reveal" data-categoria="suporte">
+        <div class="projeto-capa" style="background:linear-gradient(135deg,#00838F,#00BCD4);"><div class="grelha-linhas"></div><i class="fa-solid fa-headset"></i></div>
+        <div class="projeto-corpo">
+          <h3>Serviço de Helpdesk Empresarial</h3>
+          <p>Apoio técnico remoto e presencial a uma PME, com gestão de incidências e inventário de equipamentos.</p>
+          <div class="projeto-etiquetas"><span>Suporte</span><span>Redes</span><span>Windows / Linux</span></div>
+        </div>
+      </div>
+
+      <div class="projeto-cartao reveal" data-categoria="formacao">
+        <div class="projeto-capa" style="background:linear-gradient(135deg,#FF5722,#0D47A1);"><div class="grelha-linhas"></div><i class="fa-solid fa-chalkboard-user"></i></div>
+        <div class="projeto-corpo">
+          <h3>Curso de Introdução à Programação</h3>
+          <p>Formação de 40 horas para iniciantes, com conteúdos práticos em HTML, CSS e JavaScript.</p>
+          <div class="projeto-etiquetas"><span>Formação</span><span>Pedagogia</span><span>Web</span></div>
+        </div>
+      </div>
+
+      <div class="projeto-cartao reveal" data-categoria="web">
+        <div class="projeto-capa" style="background:linear-gradient(135deg,#0D47A1,#26D6F2);"><div class="grelha-linhas"></div><i class="fa-solid fa-clipboard-list"></i></div>
+        <div class="projeto-corpo">
+          <h3>Sistema de Gestão de Chamados</h3>
+          <p>Aplicação web para abertura, atribuição e acompanhamento de chamados técnicos.</p>
+          <div class="projeto-etiquetas"><span>PHP</span><span>JavaScript</span><span>MySQL</span></div>
+        </div>
+      </div>
+
+      <div class="projeto-cartao reveal" data-categoria="suporte">
+        <div class="projeto-capa" style="background:linear-gradient(135deg,#0288D1,#0D47A1);"><div class="grelha-linhas"></div><i class="fa-solid fa-network-wired"></i></div>
+        <div class="projeto-corpo">
+          <h3>Reestruturação de Rede Local</h3>
+          <p>Instalação e configuração de rede cablada e Wi-Fi para escritório com 25 postos de trabalho.</p>
+          <div class="projeto-etiquetas"><span>Redes</span><span>Hardware</span><span>Segurança</span></div>
+        </div>
+      </div>
+
+      <div class="projeto-cartao reveal" data-categoria="formacao">
+        <div class="projeto-capa" style="background:linear-gradient(135deg,#FF5722,#00BCD4);"><div class="grelha-linhas"></div><i class="fa-solid fa-video"></i></div>
+        <div class="projeto-corpo">
+          <h3>Materiais Pedagógicos em Vídeo</h3>
+          <p>Criação de conteúdos audiovisuais de apoio às aulas de informática, usados por várias turmas.</p>
+          <div class="projeto-etiquetas"><span>Conteúdos</span><span>Formação</span><span>Edição</span></div>
+        </div>
+      </div>
+    </div>
+    -->
+  </div>
+</section>
+
+<!-- =====================================================================
+     6. EXPERIÊNCIA PROFISSIONAL — linha cronológica
+     ===================================================================== -->
+<section id="experiencia">
+  <div class="wrap">
+    <div class="eyebrow reveal">experiência profissional</div>
+    <h2 class="titulo-seccao reveal">Percurso profissional.</h2>
+    <p class="subtitulo-seccao reveal">As funções e responsabilidades que fui assumindo ao longo do tempo.</p>
+
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-ponto"></div>
+        <div class="timeline-periodo">JAN 2026 — Atualidade</div>
+        <h3>Técnico de Informática</h3>
+        <div class="local">Freelancer, Luanda</div>
+          <p>
+            Atendimento domiciliar e remoto para diagnóstico e resolução de problemas em computadores, 
+            notebooks e redes. Manutenção preventiva e corretiva de hardware (formatação, troca
+            de peças, limpeza) e software (instalação de sistemas operacionais, 
+            pacotes de aplicativos e antivírus).
+          </p>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-ponto"></div>
+        <div class="timeline-periodo">JAN 2024 — JUN 2024</div>
+        <h3>Auxiliar de Técnico de Informática</h3>
+        <div class="local">Instituto Técnico Lucrécio dos Santos</div>
+          <p>
+              Apoio na configuração e manutenção de redes locais (cabeadas e sem fio). 
+              Auxílio na crimpagem de cabos de rede e organização de racks de equipamentos.
+              Suporte aos utilizadores para resolução de problemas de conectividade e acesso à internet.
+              Participação na criação de contas de utilizadores e configuração de permissões no Active 
+              Directory. Acompanhamento do monitoramento da rede para identificar falhas e lentidão.
+              Atualização da documentação técnica (inventário de equipamentos, etiquetagem de cabos).
+          </p>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-ponto"></div>
+        <div class="timeline-periodo">JUN 2023 — NOV 2023</div>
+        <h3>Professor Adjunto</h3>
+        <div class="local">Empresa de Serviços de TI</div>
+          <p>
+            Atuei como professor adjunto no Ensino Médio, lecionando disciplinas ligadas à tecnologia e 
+            programação. Ministrei conteúdos de Informática na Ótica do Utilizador, Excel, Algoritmos e Lógica 
+            de Programação. <br> Auxiliei o professor titular na preparação de materiais, correção de exercícios 
+            e suporte individual aos alunos, sempre com foco em tornar o aprendizado prático e acessível. 
+            Desenvolvi forte capacidade de oratória, gestão de sala de aula e adaptação de conteúdo para 
+            diferentes níveis de conhecimento.
+          </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- =====================================================================
+     7. CONTACTO
+     ===================================================================== -->
+<section id="contacto">
+  <div class="wrap">
+    <div class="eyebrow reveal">contacto</div>
+    <h2 class="titulo-seccao reveal">Vamos falar sobre o seu projeto.</h2>
+    <p class="subtitulo-seccao reveal">Preencha o formulário ou utilize os contactos diretos abaixo. Respondo normalmente em 24 horas.</p>
+
+    <div class="contacto-grelha">
+      <!-- Formulário apenas com validação no lado do cliente (frontend) -->
+      <form id="formularioContacto" class="reveal" novalidate>
+        <div class="campo" id="campoNome">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" placeholder="O seu nome completo">
+          <span class="mensagem-erro"></span>
+        </div>
+        <div class="campo" id="campoEmail">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="oseu@email.pt">
+          <span class="mensagem-erro"></span>
+        </div>
+        <div class="campo" id="campoAssunto">
+          <label for="assunto">Assunto</label>
+          <input type="text" id="assunto" name="assunto" placeholder="Sobre o que pretende falar?">
+          <span class="mensagem-erro"></span>
+        </div>
+        <div class="campo" id="campoMensagem">
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" placeholder="Escreva aqui a sua mensagem..."></textarea>
+          <span class="mensagem-erro"></span>
+        </div>
+        <button type="submit" class="botao botao-primario"><i class="fa-regular fa-paper-plane"></i> Enviar Mensagem</button>
+        <p id="mensagemSucesso" style="display:none; margin-top:14px; font-size:.85rem; color:var(--cor-secundaria); font-weight:600;">
+          <i class="fa-solid fa-circle-check"></i> Mensagem enviada com sucesso. Entrarei em contacto brevemente.
+        </p>
+      </form>
+
+      <div class="contacto-info reveal">
+        <div class="info-linha">
+          <div class="info-icone"><i class="fa-regular fa-envelope"></i></div>
+          <div><b>E-mail</b><span>eliandrosantosalfredo@gmail.com</span></div>
+        </div>
+        <div class="info-linha">
+          <div class="info-icone"><i class="fa-solid fa-phone"></i></div>
+          <div><b>Whatsapp</b><span>+244 926 359 226</span></div>
+        </div>
+        <div class="info-linha">
+          <div class="info-icone"><i class="fa-solid fa-location-dot"></i></div>
+          <div><b>Localização</b><span>Luanda, Angola.</span></div>
+        </div>
+        <div>
+          <b style="display:block; margin-bottom:12px; font-size:.95rem;">Redes sociais</b>
+          <div class="redes-sociais">
+            <a href="www.linkedin.com/in/eliandro-aderito-santos-alfredo" class="rede-botao" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/Mamemo-Alfredo" class="rede-botao" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     8. RODAPÉ — ano atualizado automaticamente via JavaScript
+     ===================================================================== -->
+<footer>
+  <div class="logotipo">
+    <div class="logotipo-marca" style="width:36px; height:36px; font-size:.85rem;">EA</div>
+    <div class="logotipo-nome" style="font-size:.9rem;">Eliandro Alfredo</div>
+  </div>
+  <p class="rodape-texto">&copy; <span id="ano-atual"></span> Eliandro Alfredo — Todos os direitos reservados.</p>
+  <div class="redes-sociais">
+    <a href="www.linkedin.com/in/eliandro-aderito-santos-alfredo" class="rede-botao" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+    <a href="https://github.com/Mamemo-Alfredo" class="rede-botao" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+  </div>
+</footer>
+
+<!-- Botão flutuante "voltar ao topo" -->
+<button id="botao-topo" aria-label="Voltar ao topo"><i class="fa-solid fa-arrow-up"></i></button>
+
+<script src="js/script.js"></script>
+</body>
+</html>
